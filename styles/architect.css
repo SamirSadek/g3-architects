@@ -68,27 +68,72 @@ nav li a {
     cursor: pointer;
     border: 0;
 }
-.banner-image{
+
+.banner-image {
     margin-top: 20px;
     width: 100%;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+}
+
+.team-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.feature-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.feature-title {
+    font-size: 3rem;
+}
+
+.quick-list {
+    color: #727272;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.of-our{
+    color: #131313;
+font-size: 45px;
+font-weight: 700;
+}
+.span-features{
+    color: #FF900E;
+font-size: 45px;
+font-weight: 700;
 }
 
 /* responsive media query */
 /* mobile devices */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
+
 /* Medium devices */
-@media screen and (min-width: 576px) and (max-width: 960px){
-    header{
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
         padding: 50px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
