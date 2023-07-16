@@ -16,7 +16,7 @@ nav {
     align-items: center;
 }
 
-#nav-title {
+.nav-title {
     color: #131313;
     font-size: 3rem;
     font-weight: 700;
@@ -59,12 +59,36 @@ nav li a {
 }
 
 .btn-primary {
-    width: 180px;
-    height: 64px;
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
-    text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
+.banner-image{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media query */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* Medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
